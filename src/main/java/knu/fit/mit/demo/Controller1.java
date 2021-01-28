@@ -6,6 +6,7 @@
 package knu.fit.mit.demo;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 /**
@@ -16,7 +17,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class Controller1 {
     
     @GetMapping("/")
-    public String doGet(){
+    public String doGet(Model model){
+        
+        model.addAttribute("name","myName");
        
     return "index2";
     }

@@ -13,8 +13,12 @@
     </head>
     <body>
         <h1>dp2021</h1>
+        <%! int i=10;%>
+        
         
         <h2>Sample page</h2>
         <p>Moving forward</p>
+        <p> i=<%=i%></p>
+        <p> Name = ${name}</p>
     </body>
 </html>
